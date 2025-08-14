@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "rustc",
+        "rustup",
         "Wrrong"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*()",
