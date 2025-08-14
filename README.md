@@ -1,7 +1,4 @@
-<!-- keep the format -->
->[!NOTE]
->Symbol to mark web external links [![alt text][1]](./README.md)
-
+# ust_main_startup
 <!-- keep the format -->
 >[!NOTE]
 >Symbol to mark web external links [![alt text][1]](./README.md)
