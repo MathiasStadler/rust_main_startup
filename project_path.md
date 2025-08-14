@@ -44,17 +44,17 @@ cargo build -v # Detailed output with compiling commands and flags
 cargo build # Standard build
 ```
 <!-- keep the format -->
-> [!TIP]
+>&nbsp;[!TIP]
 > Tip test
 <!-- keep the format -->
->[!TIP] Exclude hidden files and folders in linux find [![alt text][1]](https://stackoverflow.com/questions/58895030/exclude-hidden-files-and-folders-in-linux-find)
+>&nbsp;[!TIP] Exclude hidden files and folders in linux find [![alt text][1]](https://stackoverflow.com/questions/58895030/exclude-hidden-files-and-folders-in-linux-find)
 ><!-- keep the format -->
 >```bash <!-- markdownlint-disable-line code-block-style -->
 >find . -name "*.md" -not -path '*/[@.]*' -exec grep -nH  "EOF" {} \;
 >```
 ><!-- keep the format -->
 <!-- keep the format -->
-> [!TIP] How does "cat << EOF" work in bash? [![alt text][1]](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
+>&nbsp;[!TIP] How does "cat << EOF" work in bash? [![alt text][1]](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
 > <!-- -->
 > ```bash
 >cat <<EOF > print.sh
