@@ -165,19 +165,21 @@ mod tests {
     }
 }
 
-// cargo test --test 05_main
-
 // only testcase via cmd line 
 // cargo test --test 05_main
 // cargo test --test 05_main cli_output_fail
 // cargo test tests::cli_output_fail  -- --exact
 // cargo test -- --list
-
+// cargo test tests::cli_output_fail_exact  -- --exact
+// cargo test tests::cli_output_fail_exact  -- --exact --show-output
 // test coverage
 
 EOF
 ```
 <!-- keep the format -->
+## Rust test coverage - web search  [![alt text][1]](https://duckduckgo.com/?q=rust+test+coverage&t=vivaldi&atb=v484-1&ia=web)
+<!-- keep the format -->
+
 ## Clean the project
 <!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
