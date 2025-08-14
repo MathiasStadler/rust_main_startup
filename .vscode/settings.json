@@ -1,8 +1,11 @@
 {
     "cSpell.words": [
         "bitcode",
+        "clippy",
         "debuginfo",
         "docsrs",
+        "eprintln",
+        "println",
         "rustc",
         "rustup",
         "Wrrong"
