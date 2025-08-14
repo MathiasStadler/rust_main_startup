@@ -6,6 +6,26 @@
 cargo add assert_cmd
 ```
 <!-- keep the format -->
+## Build the project
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo build
+```
+<!-- kep the format -->
+## Run the project
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo run
+```
+<!-- keep the format -->
+## Test the project - With the help of the crate assert_cmd
+<!-- keep the format -->
+- create a test case
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo test
+```
+<!-- keep the format -->
 ## Clean the project
 <!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
@@ -24,6 +44,24 @@ cargo build -v # Detailed output with compiling commands and flags
 cargo build # Standard build
 ```
 <!-- keep the format -->
+>[!TIP] Exclude hidden files and folders in linux find [![alt text][1]](https://stackoverflow.com/questions/58895030/exclude-hidden-files-and-folders-in-linux-find)
+><!-- keep the format -->
+>```bash <!-- markdownlint-disable-line code-block-style -->
+>find . -name "*.md" -not -path '*/[@.]*' -exec grep -nH  "EOF" {} \;
+>```
+><!-- keep the format -->
+<!-- keep the format -->
+> [!TIP] How does "cat << EOF" work in bash? [![alt text][1]](https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash)
+> <!-- -->
+> ```bash
+>cat <<EOF > print.sh
+>#!/bin/bash
+>echo \$PWD
+>echo $PWD
+>EOF
+>```
+><!-- -->
+<!-- -->
 > [!NOTE]  
 > -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="cargo-fmt"' --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("cargo-fmt", "default"))'
 <!-- keep the format -->
