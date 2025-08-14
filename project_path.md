@@ -1,9 +1,41 @@
 # project path
+
+## add assert_cmd -  aims to simplify the process for doing integration testing of CLIs, including [![alt text][1]](https://crates.io/crates/assert_cmd)
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo add assert_cmd
+```
+<!-- keep the format -->
+## Clean the project
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+#-v, --verbose...               Use verbose output (-vv very verbose/build.rs output)
+cargo clean -vv
+cargo clean --verbose
+Cargo clean
+```
+<!-- keep the format -->
+## Build and run the project
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+#-v, --verbose...               Use verbose output (-vv very verbose/build.rs output)
+cargo build -vv # Huge output, very detailed
+cargo build -v # Detailed output with compiling commands and flags
+cargo build # Standard build
+```
+<!-- keep the format -->
+> [!NOTE]  
+> -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="cargo-fmt"' --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("cargo-fmt", "default"))'
+<!-- keep the format -->
+## Create test of main.rs binary
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+```
 <!-- keep the format -->
 ## Create for your own project a new project folder in the console(terminal ,bash shell), e.g. in your own home folder, and open it as a new project inside your program used - in my case MS VSCode / MS VSCodium
-<!-- To comply with the format -->
+<!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
-project_name="new_project"
+project_name="rust_main_startup"
 echo ${project_name} 
 # cd && mkdir <project_name> folder> && cd $_
 # command 'cd' change to home folder from logged in user
@@ -55,6 +87,9 @@ rustup show
 rustup show |sed -n '/active toolchain/,/^$/p'
 ```
 <!-- keep the format -->
+>[!TIP] Markdownlint - Rules inside files can be enabled, disabled
+> <!-- markdownlint-disable-next-line --> [![alt text][1]](https://github.com/DavidAnson/markdownlint)
+<!-- keep the format -->
 ## Set/switch  rust toolchain - stable to nightly
 <!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
@@ -66,6 +101,7 @@ rustup override set stable
 ## Cargo clean - Remove artifacts that cargo has generated in the past
 <!-- keep the format -->
 - -v, --verbose...               Use verbose output (-vv very verbose/build.rs output)
+<!-- markdownlint-disable-next-line -->
 --color <WHEN>             Coloring [possible values: auto, always, never]
 <!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
