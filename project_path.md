@@ -44,6 +44,9 @@ cargo build -v # Detailed output with compiling commands and flags
 cargo build # Standard build
 ```
 <!-- keep the format -->
+> [!TIP]
+> Tip test
+<!-- keep the format -->
 >[!TIP] Exclude hidden files and folders in linux find [![alt text][1]](https://stackoverflow.com/questions/58895030/exclude-hidden-files-and-folders-in-linux-find)
 ><!-- keep the format -->
 >```bash <!-- markdownlint-disable-line code-block-style -->
