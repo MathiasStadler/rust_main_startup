@@ -7,11 +7,6 @@
 <!-- keep the format -->
 - just for test [![alt text][1]](https://github.com/orgs/community/discussions/16925)
 <!-- -->
->[!TIP]
->Test tip
-<!-- keep the format -->
->[!NOTE]
->Test note
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 <!-- keep the format -->
