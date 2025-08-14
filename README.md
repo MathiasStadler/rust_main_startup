@@ -7,10 +7,10 @@
 <!-- keep the format -->
 - just for test
 <!-- -->
->[TIP!]
+>[!TIP]
 >Test tip
 <!-- keep the format -->
->[NOTE]
+>[!NOTE]
 >Test note
 <!-- download the link sign -->
 <!-- mkdir -p img && curl --create-dirs --output-dir img -O  "https://raw.githubusercontent.com/MathiasStadler/link_symbol_svg/refs/heads/main/link_symbol.svg"-->
