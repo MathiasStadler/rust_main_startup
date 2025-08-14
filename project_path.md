@@ -143,13 +143,37 @@ cargo run
 - create a test case
 <!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
-cat <<EOF > tests/01_main.rs
-// test case for main.rs
-// found binary in path ./debug/rust_main_startup
+cat <<EOF > tests/06_main.rs
 use assert_cmd::Command;
 
-let mut cmd = Command::cargo_bin("rust_main_startup").unwrap();
-cmd.assert().success();
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn cli_output() {
+        let mut cmd = Command::cargo_bin("rust_main_startup").unwrap();
+
+        cmd.assert().success().stdout("Hello, world!\n");
+    }
+
+    #[test]
+    fn cli_output_fail() {
+        let mut cmd = Command::cargo_bin("rust_main_startup").unwrap();
+
+        cmd.assert().success().stdout("Failed Hello, world!\n");
+    }
+}
+
+// cargo test --test 05_main
+
+// only testcase via cmd line 
+// cargo test --test 05_main
+// cargo test --test 05_main cli_output_fail
+// cargo test tests::cli_output_fail  -- --exact
+// cargo test -- --list
+
+// test coverage
 
 EOF
 ```

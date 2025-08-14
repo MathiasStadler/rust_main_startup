@@ -12,7 +12,8 @@ mod tests {
     }
 
     #[test]
-    fn cli_output_fail() {
+    #[should_panic]
+    fn cli_output_fail_exact() {
         let mut cmd = Command::cargo_bin("rust_main_startup").unwrap();
 
         cmd.assert().success().stdout("Failed Hello, world!\n");
@@ -26,5 +27,7 @@ mod tests {
 // cargo test --test 05_main cli_output_fail
 // cargo test tests::cli_output_fail  -- --exact
 // cargo test -- --list
+// cargo test tests::cli_output_fail_exact  -- --exact
 
 // test coverage
+
