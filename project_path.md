@@ -179,6 +179,34 @@ EOF
 <!-- keep the format -->
 ## Rust test coverage - web search  [![alt text][1]](https://duckduckgo.com/?q=rust+test+coverage&t=vivaldi&atb=v484-1&ia=web)
 <!-- keep the format -->
+>&nbsp;[!NOTE]&nbsp;-&nbspBe sure toolchain rust stable is active
+<!-- keep the format -->
+>&nbsp;[!NOTE]&nbsp;-&nbsp;Follow the instructions from the website
+<!-- keep the format -->
+## Create and prepare bootstrap.toml
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cat <<EOF > ./bootstrap.toml
+# Build the profiler runtime (required when compiling with options that depend
+# on this runtime, such as -C profile-generate or -C instrument-coverage).
+# FROM HERE - https://doc.rust-lang.org/rustc/instrument-coverage.html
+profiler = true
+EOF
+```
+<!-- keep the format -->
+## Building/install  the demangler
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo install rustfilt
+```
+<!-- keep the format -->
+## Clean - Compiling this project with coverage enabled
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo clean
+RUSTFLAGS="-C instrument-coverage" cargo build
+```
+<!-- kep the format -->
 
 ## Clean the project
 <!-- keep the format -->
@@ -186,9 +214,10 @@ EOF
 #-v, --verbose...               Use verbose output (-vv very verbose/build.rs output)
 cargo clean -vv
 cargo clean --verbose
-Cargo clean
+cargo clean
 ```
 <!-- keep the format -->
+
 ## Build and run the project
 <!-- keep the format -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
