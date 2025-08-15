@@ -9,8 +9,12 @@
 <!-- keep the format -->
 - Just for test [![alt text][1]](https://github.com/orgs/community/discussions/16925)
 <!-- -->
-> [!NOTE]  
+>&nbsp;[!NOTE]
+<!-- -->
+>&nbsp;[!NOTE]  
 > Highlights information that users should take into account, even when skimming.
+<!-- keep the format -->
+>&nbsp;[!NOTE]&nbsp;-&nbsp;Follow the instructions from the website
 <!-- keep the format -->
 > [!TIP]
 > Optional information to help a user be more successful.

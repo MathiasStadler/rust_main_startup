@@ -179,7 +179,7 @@ EOF
 <!-- keep the format -->
 ## Rust test coverage - web search  [![alt text][1]](https://duckduckgo.com/?q=rust+test+coverage&t=vivaldi&atb=v484-1&ia=web)
 <!-- keep the format -->
->&nbsp;[!NOTE]&nbsp;-&nbspBe sure toolchain rust stable is active
+>&nbsp;[!NOTE]&nbsp;-&nbsp;Be sure toolchain rust stable is active
 <!-- keep the format -->
 >&nbsp;[!NOTE]&nbsp;-&nbsp;Follow the instructions from the website
 <!-- keep the format -->
