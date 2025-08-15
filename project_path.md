@@ -177,11 +177,24 @@ mod tests {
 EOF
 ```
 <!-- keep the format -->
+> [!TIP] - Profile-guided Optimization [![alt text][1]](https://doc.rust-lang.org/rustc/profile-guided-optimization.html)
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+rustup component add llvm-tools-preview
+```
+<!-- keep the format -->
+llvm-profdata merge -output=my_program.profdata my_program.profraw
+rustc -Cprofile-generate=/tmp/pgo-data src/main.rs
+RUSTFLAGS="-C instrument-coverage" cargo build
+https://doc.rust-lang.org/rustc/profile-guided-optimization.html
+https://doc.rust-lang.org/rustc/profile-guided-optimization.html
+https://medium.com/@sag50692/code-coverage-with-llvm-cov-16639b71f6a5
+<!-- keep the format -->
 ## Rust test coverage - web search  [![alt text][1]](https://duckduckgo.com/?q=rust+test+coverage&t=vivaldi&atb=v484-1&ia=web)
 <!-- keep the format -->
->&nbsp;[!NOTE]&nbsp;-&nbsp;Be sure toolchain rust stable is active
+> [!NOTE] - Be sure toolchain rust stable is active **rustup show |sed -n '/active toolchain/,/^$/p'**
 <!-- keep the format -->
->&nbsp;[!NOTE]&nbsp;-&nbsp;Follow the instructions from the website
+> [!NOTE] - Follow the instructions from the website
 <!-- keep the format -->
 ## Create and prepare bootstrap.toml
 <!-- keep the format -->
@@ -207,6 +220,7 @@ cargo clean
 RUSTFLAGS="-C instrument-coverage" cargo build
 ```
 <!-- kep the format -->
+
 
 ## Clean the project
 <!-- keep the format -->
